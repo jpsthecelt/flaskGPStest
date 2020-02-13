@@ -9,7 +9,8 @@ def parseGPS(str):
 
 if __name__ == '__main__':
     try:
-        with serial.Serial('/dev/serial0', 9600, timeout=1.0) as sp:
+        with serial.Serial('/dev/ttyUSB0', 9600, timeout=1.0) as sp:
+#        with serial.Serial('/dev/serial0', 9600, timeout=1.0) as sp:
            while True:
                byteChars = sp.readline()
                parseGPS(byteChars.decode('utf-8'))

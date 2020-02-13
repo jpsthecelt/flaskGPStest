@@ -144,7 +144,8 @@ def checksum(line):
 
 if __name__ == '__main__':
 #   ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)  # Open Serial port
-    sp = serial.Serial('/dev/serial0', 9600, timeout=1)  # Open Serial port
+#    sp = serial.Serial('/dev/serial0', 9600, timeout=1)  # Open Serial port
+    sp = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)  # Open Serial port
     try:
         while True:
             line = readString(sp)
