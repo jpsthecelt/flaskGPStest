@@ -3,7 +3,7 @@ aniso8601==9.0.1
 attrs==20.3.0
 click==7.1.2
 flask-restplus==0.12.1
-flask==1.0.3
+flask==2.2.5
 importlib-metadata==3.7.3 ; python_version < '3.8'
 itsdangerous==1.1.0
 jinja2==2.11.3
